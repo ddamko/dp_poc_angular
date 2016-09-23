@@ -23,6 +23,7 @@ import {
   RioCounterPage
 } from '../pages';
 import {RioCounter} from '../components/counter/counter.component';
+import {WWSItem} from '../components/item/item.component';
 import {RioLoginModule} from '../components/login/login.module';
 import {RioUiModule} from '../components/ui/ui.module';
 import {RioNavigatorModule} from '../components/navigator/navigator.module';
@@ -54,7 +55,8 @@ import {RioNavigatorModule} from '../components/navigator/navigator.module';
     NgReduxRouter,
     appRoutingProviders,
     SessionActions,
-    SessionEpics
+    SessionEpics,
+    { provide: 'apiBase', useValue: '/api' }
   ]
 })
 export class RioSampleAppModule { }

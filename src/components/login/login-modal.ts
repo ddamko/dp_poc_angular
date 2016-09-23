@@ -5,7 +5,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   template: `
     <rio-modal>
       <rio-modal-content>
-        <h1 class='mt0'>Login</h1>
+        <h1 class='mt0'>Distributor Portal Login</h1>
         <rio-login-form
           [isPending]="isPending"
           [hasError]="hasError"

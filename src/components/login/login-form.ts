@@ -13,7 +13,7 @@ import {
     <rio-form
       [group]="group"
       (onSubmit)="handleSubmit()">
-      <rio-alert 
+      <rio-alert
         qaid="qa-pending"
         testid="alert-pending"
         status='info'

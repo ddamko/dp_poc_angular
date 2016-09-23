@@ -14,5 +14,5 @@ import { Component } from '@angular/core';
   `
 })
 export class RioLogo {
-  private LogoImage = require('../../assets/rangleio-logo.svg');
+  private LogoImage = require('../../assets/WWS_Logo.jpg');
 };

@@ -52,6 +52,7 @@ exports.json = {
 };
 
 exports.svg = makeFileLoader(/\.svg$/);
+exports.jpg = makeFileLoader(/\.jpg$/);
 exports.eot = makeFileLoader(/\.eot$/);
 exports.woff = makeFileLoader(/\.woff$/);
 exports.woff2 = makeFileLoader(/\.woff2$/);
