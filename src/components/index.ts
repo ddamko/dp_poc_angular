@@ -2,10 +2,12 @@ import { RioAlert } from './alert';
 import { RioButton } from './button';
 import { RioContainer } from './container';
 import { RioCounter } from './counter';
+import { WWSItem } from './item/item.component';
 import { RioLogo } from './logo';
 import { RioLoginModal, RioLoginForm } from './login';
 import { RioNavigator, RioNavigatorItem } from './navigator';
 import { RioModal, RioModalContent } from './modal';
+
 import {
   RioForm,
   RioFormError,
@@ -30,5 +32,6 @@ export {
   RioModal,
   RioModalContent,
   RioNavigator,
-  RioNavigatorItem
+  RioNavigatorItem,
+  WWSItem
 };

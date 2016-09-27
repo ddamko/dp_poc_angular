@@ -18,6 +18,7 @@ export class ItemEpics {
       .mergeMap<IPayloadAction>(({ payload }) => {
         return this._http.post(`${BASE_URL}/customer/item`, payload)
           .map(result => ({
+            type: ItemActions.ITEMS_RETURNED,
             payload: result.json().data
           }))
           .catch(error => {

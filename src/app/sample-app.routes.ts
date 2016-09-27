@@ -2,7 +2,8 @@ import {Routes} from '@angular/router';
 
 import {
   RioCounterPage,
-  RioAboutPage
+  RioAboutPage,
+  ItemsPage
 } from '../pages';
 
 export const SAMPLE_APP_ROUTES: Routes = [{
@@ -15,4 +16,7 @@ export const SAMPLE_APP_ROUTES: Routes = [{
 }, {
   path: 'about',
   component: RioAboutPage
+}, {
+  path: 'items',
+  component: ItemsPage
 }];

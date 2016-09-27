@@ -1,11 +1,11 @@
-import {NgModule}      from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {BrowserModule} from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 import {
   DevToolsExtension,
   NgRedux
 } from 'ng2-redux';
-import {NgReduxRouter} from 'ng2-redux-router';
+import { NgReduxRouter } from 'ng2-redux-router';
 import {
   routing,
   appRoutingProviders
@@ -15,18 +15,20 @@ import {
   FormBuilder,
   ReactiveFormsModule,
 } from '@angular/forms';
-import {RioSampleApp} from './sample-app';
-import {SessionActions} from '../actions/session.actions';
-import {SessionEpics} from '../epics/session.epics';
+import { RioSampleApp } from './sample-app';
+import { SessionActions } from '../actions/session.actions';
+import { SessionEpics } from '../epics/session.epics';
 import {
   RioAboutPage,
-  RioCounterPage
+  RioCounterPage,
+  ItemsPage
 } from '../pages';
-import {RioCounter} from '../components/counter/counter.component';
-import {WWSItem} from '../components/item/item.component';
-import {RioLoginModule} from '../components/login/login.module';
-import {RioUiModule} from '../components/ui/ui.module';
-import {RioNavigatorModule} from '../components/navigator/navigator.module';
+import { RioCounter } from '../components/counter/counter.component';
+import { WWSItem } from '../components/item/item.component';
+import { RioLoginModule } from '../components/login/login.module';
+import { RioUiModule } from '../components/ui/ui.module';
+import { RioNavigatorModule } from '../components/navigator/navigator.module';
+
 
 @NgModule({
   imports: [
@@ -43,6 +45,8 @@ import {RioNavigatorModule} from '../components/navigator/navigator.module';
     RioSampleApp,
     RioAboutPage,
     RioCounterPage,
+    ItemsPage,
+    WWSItem,
     RioCounter
   ],
   bootstrap: [

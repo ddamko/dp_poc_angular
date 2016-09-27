@@ -1,6 +1,7 @@
 import { IAppState, rootReducer, deimmutify, reimmutify } from './store';
 import { ICounter } from './counter';
 import { ISession } from './session';
+import { IItem } from './item';
 
 import {dev} from '../configuration';
 
@@ -10,6 +11,7 @@ const persistState = require('redux-localstorage');
 export {
   IAppState,
   ISession,
+  IItem,
   ICounter,
   rootReducer,
   reimmutify,

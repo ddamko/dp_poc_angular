@@ -1,11 +1,12 @@
-import {TypedRecord} from 'typed-immutable-record';
+import { TypedRecord } from 'typed-immutable-record';
 
 export interface IUser {
   firstName: string;
   lastName: string;
 };
 
-export interface IUserRecord extends TypedRecord<IUserRecord>, IUser {
+export interface IUserRecord extends TypedRecord<IUserRecord>, 
+  IUser {
 };
 
 export interface ISession {
