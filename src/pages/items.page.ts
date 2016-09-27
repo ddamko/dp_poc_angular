@@ -10,13 +10,14 @@ import { IItem } from '../store';
   selector: 'counter-page',
   providers: [ ItemActions ],
   template: `
-    <rio-container testid="items" [size]=2 [center]=true>
+    <rio-container testid="items" [size]=0 [center]=true>
       <h2 data-testid="items-heading" id="qa-items-heading"
         class="center caps">
         Items
       </h2>
       <wws-item
       [item]="item$ | async"
+      (get_items)="actions.get_items('7D4B19AF-ADE8-8542-9CEE-FBD487B74F80')"
       ></wws-item>
     </rio-container>
   `

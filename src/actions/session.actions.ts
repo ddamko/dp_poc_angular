@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { NgRedux } from 'ng2-redux';
 import { IAppState } from '../store';
+import { ItemActions } from './item.actions';
 
 @Injectable()
 export class SessionActions {

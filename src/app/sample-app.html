@@ -14,9 +14,14 @@
         class="text-decoration-none">Counter</a>
     </rio-navigator-item>
 
-    <rio-navigator-item *ngIf="loggedIn$ | async">
+    <rio-navigator-item *ngIf="loggedIn$ | async" [mr]=true>
       <a [routerLink]="['/about']"
         class="text-decoration-none">About Us</a>
+    </rio-navigator-item>
+
+    <rio-navigator-item *ngIf="loggedIn$ | async">
+      <a [routerLink]="['/items']"
+        class="text-decoration-none">Show Items</a>
     </rio-navigator-item>
 
     <div class="flex flex-auto"></div>

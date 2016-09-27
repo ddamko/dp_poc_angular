@@ -18,6 +18,8 @@ import {
 import { RioSampleApp } from './sample-app';
 import { SessionActions } from '../actions/session.actions';
 import { SessionEpics } from '../epics/session.epics';
+import { ItemActions } from '../actions/item.actions';
+import { ItemEpics } from '../epics/item.epics';
 import {
   RioAboutPage,
   RioCounterPage,
@@ -60,6 +62,8 @@ import { RioNavigatorModule } from '../components/navigator/navigator.module';
     appRoutingProviders,
     SessionActions,
     SessionEpics,
+    ItemActions,
+    ItemEpics,
     { provide: 'apiBase', useValue: '/api' }
   ]
 })
